@@ -10,6 +10,8 @@ function tangent(c = document.getElementById("a").value){//c is angle
     var d, e;
     d = Math.tan(c);
     e = Math.degrees(d);
+    console.log(c);
+    console.log(d);
     document.getElementById("debugone").innerHTML = d;
     document.getElementById("b").innerHTML = e;
 }
@@ -18,6 +20,8 @@ function arctangent(f = document.getElementById("c").value){//f is tangent of an
     var g, h;
     g = Math.atan(f);
     h = Math.degrees(f);
-    document.getElementById("debugtwo").innerHTML = f;
+    document.getElementById("debugtwo").innerHTML = g;
+    console.log(f);
+    console.log(g);
     document.getElementById("d").innerHTML = h;
 }
