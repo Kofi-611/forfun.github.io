@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Random Javascript Things</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="rand.js" type="text/javascript" charset="utf-8"></script>
+    <script src="trig.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
     <div class="top">
@@ -12,10 +12,52 @@
             <h1 class="title_text">Javascript Math</h1>
         </div>
     </div>
-    <div class="all_formulas">
+    <div class="allformulas">
         <div class="trig">
-            <div class="ratios_and_uses">
-                <div class="ratios">
+            <div class="subone">
+                <h2 class="subtitle">Trigonometry</h2>
+            </div>
+            <div class="trig_ratios_and_uses">
+                <div class="subtwo">
+                    <h3 class="secondsubtitle">Trigonometry Rations and Their Uses</h3>
+                </div>
+                <div class="trigratios">
+                    <div class="subthree">
+                        <h4 class="thirdsubtitle">Ratios</h4>
+                    </div>
+                    <div class="tangent">
+                        <div class="subfour">
+                            <h4 class="fourthsubtitle">Tangent of a Angle</h4>
+                        </div>
+                        <div class="tangformdiv">
+                            <form id="tangentform", class="tangentform">
+                                Angle size in degrees:<br>
+                                <input type="number" id="a"><br><br>
+                                <input type="button", onclick="tangent()", class="tangentbutton", value="Find tangent!">
+                            </form>
+                        </div>
+                        <div class="tangentans">
+                            <p id="debugone"></p><!--This checks for errors in a way-->
+                            <p class="preanswer">The tangent, in degrees, is:</p>
+                            <p class="answer" id="b"></p>
+                        </div>
+                    </div>
+                    <div class="arctangent">
+                        <div class="subfour">
+                            <h4 class="fourthsubtitle">Arctangent of a Tangent</h4>
+                        </div>
+                        <div class="arctangformdiv">
+                            <form id="arctangentform" class="arctangentform">
+                                Tangent value to the nearest hundredth:<br>
+                                <input type="number" id="c"><br><br>
+                                <input type="button" onclick="arctangent()" class="arctangentbutton" value="Find andgle!">
+                            </form>
+                        </div>
+                        <div class="arctangentans">
+                            <p id="debugtwo"></p><!--More debugging-->
+                            <p class="preanswer">The size of the angle, in degrees, is:</p>
+                            <p class="answer" id="d"></p>
+                        </div>
                 </div>
                 <div class="uses">
                 </div>
@@ -26,7 +68,7 @@
         <div class="geometry">
         </div>
         <div class="algebra_two">
-        </div>hhhhh
+        </div>
     </div>
 </body>
 </html>
