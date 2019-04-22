@@ -10,7 +10,7 @@ function tangent(c = document.getElementById("a").value){//c is angle
     var d, e;
     d = Math.tan(c);
     e = Math.degrees(d);
-    document.getElementById("debugone").innerHTML = c;
+    document.getElementById("debugone").innerHTML = d;
     document.getElementById("b").innerHTML = e;
 }
 
