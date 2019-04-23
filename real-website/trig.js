@@ -1,10 +1,10 @@
 Math.radians = function radian(degrees){
     a = (degrees * (Math.PI / 180));
-}
+};
 
 Math.degrees = function degree(radians){
     b = (radians * (180 / Math.PI));
-}
+};
 
 function tangent(c = document.getElementById("a").value){//c is angle
     var d, e;
@@ -14,15 +14,18 @@ function tangent(c = document.getElementById("a").value){//c is angle
     console.log(d);
     document.getElementById("debugone").innerHTML = d;
     document.getElementById("b").innerHTML = e;
-}
-
-function arcstep(i = document.getElementById("c").value){}
+};
+/*
+function arcstep(i = document.getElementById("c").value){
+    var j = i + 0.01;
+    document.getElementById("c").value = j;
+};
+*/
 function arctangent(f = document.getElementById("c").value){//f is tangent of angle
     var g, h;
-    g = Math.atan(f);
+    g = Math.atan(Math.radians(f));
     h = Math.degrees(f);
-    document.getElementById("debugtwo").innerHTML = g;
     console.log(f);
     console.log(g);
     document.getElementById("d").innerHTML = h;
-}
+};
