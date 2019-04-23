@@ -12,9 +12,31 @@
     </script>    
 </head>
 <body>
-    <div class="top">
+    <div class="top" id="top">
         <div class="title">
             <h1 class="title_text">Javascript Math</h1>
+        </div>
+        <div class="navbar">
+            <div class="trigdrop">
+                <button class="trigdropbtn">Trigonometry
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="trigDropdownContent">
+                    <div class="trigratiosusesdrop">
+                        <button class="ratiosusesbtn">Ratios and Their Uses
+                            <i class="fa fa-caret-right"></i>
+                        </button>
+                        <div class="ratiosusescontent">
+                            <a href="#tangent">Tangent</a>
+                            <a href="#arctangent">Arctangent</a>
+                            <a href="#sine">Sine</a>
+                            <a href="#arcsine">Arcsine</a>
+                            <a href="#cosine">Cosine</a>
+                            <a href="#arccosine">Arccosine</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="allformulas">
@@ -22,7 +44,7 @@
             <div class="subone">
                 <h2 class="subtitle">Trigonometry</h2>
             </div>
-            <div class="trig_ratios_and_uses">
+            <div class="trig_ratios_and_uses" id="trig_ratios_and_uses">
                 <div class="subtwo">
                     <h3 class="secondsubtitle">Trigonometry Rations and Their Uses</h3>
                 </div>
@@ -30,9 +52,9 @@
                     <div class="subthree">
                         <h4 class="thirdsubtitle">Ratios</h4>
                     </div>
-                    <div class="tangent">
+                    <div class="tangent" id="tangent">
                         <div class="subfour">
-                            <h4 class="fourthsubtitle">Tangent of a Angle</h4>
+                            <h4 class="fourthsubtitle">Tangent of an Angle</h4>
                         </div>
                         <div class="tangformdiv">
                             <form id="tangentform", class="tangentform">
@@ -47,7 +69,7 @@
                             <p class="answer" id="b"></p>
                         </div>
                     </div>
-                    <div class="arctangent">
+                    <div class="arctangent" id="arctangent">
                         <div class="subfour">
                             <h4 class="fourthsubtitle">Arctangent of a Tangent</h4>
                         </div>
@@ -59,7 +81,7 @@
 
                                 <!-- <input type="number" id="c" onkeyup="arcstep()"><br><br> -->
 
-                                <input type="button" onclick="arctangent()" class="arctangentbutton" value="Find andgle!">
+                                <input type="button" onclick="arctangent()" class="arctangentbutton" value="Find angle!">
                             </form>
                         </div>
                         <div class="arctangentans">
@@ -67,7 +89,71 @@
                             <p class="preanswer">The size of the angle, in degrees, is:</p>
                             <p class="answer" id="d"></p>
                         </div>
-                </div>
+                    </div>
+                    <div class="sine" id="sine">
+                        <div class="subfour">
+                            <h4 class="fourthsubtitle">Sine of an Angle</h4>
+                        </div>
+                        <div class="sineformdiv">
+                            <form class="sineform">
+                                Angle size:<br>
+                                <input type="number" id="e"><br><br>
+                                <input type="button" onclick="sine()" class="sinebutton" value="Find sine!">
+                            </form>
+                        </div>
+                        <div class="sineans">
+                            <p class="preanswer">The sine of the angle, in degrees, is:</p>
+                            <p class="answer" id="f"></p>
+                        </div>
+                    </div>
+                    <div class="arcsine" id="arcsine">
+                        <div class="subfour">
+                            <h4 class="fourthsubtitle">Arcsine of a Sine</h4>
+                        </div>
+                        <div class="arcsineformdiv">
+                            <form class="arcsineform">
+                                Sine value to the nearest hundredth:<br>
+                                <input type="number" id="g" onchange="setTwoNumberDecimal" step="0.01"><br><br>
+                                <input type="button" onclick="arcsine()" class="arcsinebutton">
+                            </form>
+                        </div>
+                        <div class="arcsineans">
+                            <p class="preanswer">The size of the angle, in degrees, is:</p>
+                            <p class="answer" id="h"></p>
+                        </div>
+                    </div>
+                    <div class="cosine" id="cosine">
+                        <div class="subfour">
+                            <h4 class="fourthsubtitle">Cosine of an Angle</h4>
+                        </div>
+                        <div class="cosineformdiv">
+                            <form class="cosineform">
+                                Angle size:<br>
+                                <input type="number" id="i"><br><br>
+                                <input type="button" onclick="cosine()" class="cosinebutton">
+                            </form>
+                        </div>
+                        <div class="cosineans">
+                            <p class="preanswer">The cosine of the angle, in degrees, is;</p>
+                            <p class="answer" id="j"></p>
+                        </div>
+                    </div>
+                    <div class="arccosine" id="arccosine">
+                        <div class="subfour">
+                            <h4 class="fourthsubtitle">Arccosine of a Cosine</h4>
+                        </div>
+                        <div class="arccosineformdiv">
+                            <form class="arccosineform">
+                                Cosine to the nearest hundredth:<br>
+                                <input type="number" id="k" onchange="setTwoNumberDecimal" step="0.01"><br><br>
+                                <input type="button" onclick="arccosine()" class="arccosinebutton">
+                            </form>
+                        </div>
+                        <div class="arccosineans">
+                            <p class="preanswer">The angle size, in degrees, is:</p>
+                            <p class="answer" id="l"></p>
+                        </div>
+                    </div>
                 <div class="uses">
                 </div>
             </div>
