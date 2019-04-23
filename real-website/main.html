@@ -4,10 +4,10 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Random Javascript Things</title>
     <link href="main.css" rel="stylesheet" type="text/css">
-    <script src="trig.js" type="text/javascript" charset="utf-8"></script>
+    <script src="trigratios.js" type="text/javascript" charset="utf-8"></script>
     <script>
     function setTwoNumberDecimal(event){
-        this.value = parseFloat(this.value).toFixed(2);
+        this.value = parseFloat(this.value).toFixed(9);
     }
     </script>    
 </head>
@@ -75,7 +75,7 @@
                         </div>
                         <div class="arctangformdiv">
                             <form id="arctangentform" class="arctangentform">
-                                Tangent value to the nearest hundredth:<br>
+                                Tangent value to the nearest billionth(nine decimal places):<br>
 
                                 <input type="number" id="c" onchange="setTwoNumberDecimal" step="0.01"><br><br>
 
@@ -112,7 +112,7 @@
                         </div>
                         <div class="arcsineformdiv">
                             <form class="arcsineform">
-                                Sine value to the nearest hundredth:<br>
+                                Sine value to the nearest billionth(nine decimal places):<br>
                                 <input type="number" id="g" onchange="setTwoNumberDecimal" step="0.01"><br><br>
                                 <input type="button" onclick="arcsine()" class="arcsinebutton">
                             </form>
@@ -144,7 +144,7 @@
                         </div>
                         <div class="arccosineformdiv">
                             <form class="arccosineform">
-                                Cosine to the nearest hundredth:<br>
+                                Cosine to the nearest billionth(nine decimal places):<br>
                                 <input type="number" id="k" onchange="setTwoNumberDecimal" step="0.01"><br><br>
                                 <input type="button" onclick="arccosine()" class="arccosinebutton">
                             </form>

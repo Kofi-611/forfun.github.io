@@ -1,1 +1,6 @@
 @CHARSET "UTF-8";
+
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+}
