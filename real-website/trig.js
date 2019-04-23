@@ -16,6 +16,7 @@ function tangent(c = document.getElementById("a").value){//c is angle
     document.getElementById("b").innerHTML = e;
 }
 
+function arcstep(i = document.getElementById("c").value){}
 function arctangent(f = document.getElementById("c").value){//f is tangent of angle
     var g, h;
     g = Math.atan(f);
