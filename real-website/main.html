@@ -2,9 +2,13 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Random Javascript Things</title>
     <link href="main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="trigratios.js" type="text/javascript" charset="utf-8"></script>
+	<script src="mintop.js" type="text/javascript" charset="utf-8"></script>
     <script>
     function setTwoNumberDecimal(event){
         this.value = parseFloat(this.value).toFixed(9);
@@ -13,33 +17,31 @@
 </head>
 <body>
     <div class="top" id="top">
-        <div class="title">
-            <h1 class="title_text">Javascript Math</h1>
-        </div>
-        <div class="navbar">
-            <div class="trigdrop">
-                <button class="trigdropbtn">Trigonometry
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="trigDropdownContent">
-                    <div class="trigratiosusesdrop">
-                        <button class="ratiosusesbtn">Ratios and Their Uses
-                            <i class="fa fa-caret-right"></i>
-                        </button>
-                        <div class="ratiosusescontent">
-                            <a href="#tangent">Tangent</a>
-                            <a href="#arctangent">Arctangent</a>
-                            <a href="#sine">Sine</a>
-                            <a href="#arcsine">Arcsine</a>
-                            <a href="#cosine">Cosine</a>
-                            <a href="#arccosine">Arccosine</a>
-                        </div>
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="sidenav">
+			<button class="w3-bar-item w3-button w3-large" onclick="sideclose()">Close &times;</button>
+			<div class="trigDropdownContent">
+            		<div>
+                		<button class="w3-button w3-bar-item" onclick="accordion('ratuse')">Trig Ratios and Uses
+                    		<i class="fa fa-caret-down"></i>
+                    </button>
+                    <div id="ratuse" class="w3-hide">
+                    		<a href="#tangent" class="w3-button w3-block w3-left-align">Tangent</a>
+                        <a href="#arctangent" class="w3-button w3-block w3-left-align">Arctangent</a>
+                        <a href="#sine" class="w3-button w3-block w3-left-align">Sine</a>
+                        <a href="#arcsine" class="w3-button w3-block w3-left-align">Arcsine</a>
+                        <a href="#cosine" class="w3-button w3-block w3-left-align">Cosine</a>
+                        <a href="#arccosine" class="w3-button w3-block w3-left-align">Arccosine</a>
                     </div>
                 </div>
             </div>
+		</div>
+        <div class="w3-light-green title">
+			<button id="openside" class="w3-button w3-light-green w3-xlarge" onclick="sideopen()">&#9776;</button>
+            <h1 class="title_text">Javascript Math</h1>
         </div>
+        
     </div>
-    <div class="allformulas">
+    <div class="allformulas" id="allformulas">
         <div class="trig">
             <div class="subone">
                 <h2 class="subtitle">Trigonometry</h2>
@@ -57,7 +59,7 @@
                             <h4 class="fourthsubtitle">Tangent of an Angle</h4>
                         </div>
                         <div class="tangformdiv">
-                            <form id="tangentform", class="tangentform">
+                            <form id="tangentform" class="tangentform">
                                 Angle size in degrees:<br>
                                 <input type="number" id="a"><br><br>
                                 <input type="button" onclick="tangent()" class="tangentbutton" value="Find tangent!">
@@ -114,7 +116,7 @@
                             <form class="arcsineform">
                                 Sine value to the nearest billionth(nine decimal places):<br>
                                 <input type="number" id="g" onchange="setTwoNumberDecimal" step="0.01"><br><br>
-                                <input type="button" onclick="arcsine()" class="arcsinebutton">
+                                <input type="button" onclick="arcsine()" class="arcsinebutton" value="Find angle!">
                             </form>
                         </div>
                         <div class="arcsineans">
@@ -130,7 +132,7 @@
                             <form class="cosineform">
                                 Angle size:<br>
                                 <input type="number" id="i"><br><br>
-                                <input type="button" onclick="cosine()" class="cosinebutton">
+                                <input type="button" onclick="cosine()" class="cosinebutton" value="Find cosine!">
                             </form>
                         </div>
                         <div class="cosineans">
@@ -146,7 +148,7 @@
                             <form class="arccosineform">
                                 Cosine to the nearest billionth(nine decimal places):<br>
                                 <input type="number" id="k" onchange="setTwoNumberDecimal" step="0.01"><br><br>
-                                <input type="button" onclick="arccosine()" class="arccosinebutton">
+                                <input type="button" onclick="arccosine()" class="arccosinebutton" value="Find angle!">
                             </form>
                         </div>
                         <div class="arccosineans">
