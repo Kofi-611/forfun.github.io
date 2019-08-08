@@ -14,46 +14,23 @@
         this.value = parseFloat(this.value).toFixed(9);
     }
     </script>
-	<script>
-	function accordion(a){
-	var b = document.getElementById(a);
-	if (b.className.indexOf("w3-show") == -1){
-		b.className += " w3-show";
-	} else{
-		b.className=b.className.replace(" w3-show", "")
-	}
-}
-
-function sideopen(){
-	document.getElementById("allformulas").style.marginleft = "25%";
-	document.getElementById("sidenav").style.width = "25%";
-	document.getElementById("sidenav").style.display = "block";
-	document.getElementById("openside").style.display = 'none';
-}
-
-function sideclose(){
-	document.getElementById("allformulas").style.marginLeft="0%";
-	document.getElementById("sidenav").style.display = "none";
-	document.getElementById("openside").style.display = "inline-block";
-}
-	</script>
 </head>
 <body>
     <div class="top" id="top">
 		<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="sidenav">
 			<button class="w3-bar-item w3-button w3-large" onclick="sideclose()">Close &times;</button>
 			<div class="trigDropdownContent">
-            		<div>
-                		<button class="w3-button w3-bar-item" onclick="accordion('ratuse')">Trig Ratios and Uses
+            		<div class="w3-dropdown-click">
+                		<button class="w3-button" onclick='accordion("ratuse")'>Trig Ratios and Uses
                     		<i class="fa fa-caret-down"></i>
                     </button>
-                    <div id="ratuse" class="w3-hide">
-                    		<a href="#tangent" class="w3-button w3-block w3-left-align">Tangent</a>
-                        <a href="#arctangent" class="w3-button w3-block w3-left-align">Arctangent</a>
-                        <a href="#sine" class="w3-button w3-block w3-left-align">Sine</a>
-                        <a href="#arcsine" class="w3-button w3-block w3-left-align">Arcsine</a>
-                        <a href="#cosine" class="w3-button w3-block w3-left-align">Cosine</a>
-                        <a href="#arccosine" class="w3-button w3-block w3-left-align">Arccosine</a>
+                    <div id="ratuse" class="w3-hide w3-dropdown-content w3-bar-block w3-grey w3-card">
+                    		<a href="#tangent" class="w3-button w3-bar-item">Tangent</a>
+                        <a href="#arctangent" class="w3-button w3-bar-item">Arctangent</a>
+                        <a href="#sine" class="w3-button w3-bar-item">Sine</a>
+                        <a href="#arcsine" class="w3-button w3-bar-item">Arcsine</a>
+                        <a href="#cosine" class="w3-button w3-bar-item">Cosine</a>
+                        <a href="#arccosine" class="w3-button w3-bar-item">Arccosine</a>
                     </div>
                 </div>
             </div>

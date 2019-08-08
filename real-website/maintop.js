@@ -2,8 +2,11 @@ function accordion(a){
 	var b = document.getElementById(a);
 	if (b.className.indexOf("w3-show") == -1){
 		b.className += " w3-show";
+		b.previousElementSibling.className += " w3-purple";
 	} else{
-		b.className=b.className.replace(" w3-show", "")
+		b.className = b.className.replace(" w3-show", "");
+		b.previousElementSibling.className = 
+		b.previousElementSibling.className.replace(" w3-purple", "");
 	}
 }
 
