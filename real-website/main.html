@@ -19,16 +19,18 @@
     <div class="top" id="top">
 		<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="sidenav">
 			<button class="w3-bar-item w3-button w3-large" onclick="sideclose()">Close &times;</button>
-                		<button class="w3-button w3-block w3-left-align" onclick='accordion_one()'>Trig Ratios and Uses<i class="fa fa-caret-down"></i>
+				<div class="w3-dropdown-click">
+                	<button class="w3-button" onclick='accordion_one()'>Trig Ratios and Uses<i class="fa fa-caret-down"></i>
                     </button>
-                    <div id="ratuse" class="w3-hide w3-grey w3-card">
-                    		<a href="#tangent" class="w3-button w3-bar-item">Tangent</a>
+                    <div id="ratuse" class="w3-dropdown-content w3-bar-block w3-grey w3-card">
+                    	<a href="#tangent" class="w3-button w3-bar-item">Tangent</a>
                         <a href="#arctangent" class="w3-button w3-bar-item">Arctangent</a>
                         <a href="#sine" class="w3-button w3-bar-item">Sine</a>
                         <a href="#arcsine" class="w3-button w3-bar-item">Arcsine</a>
                         <a href="#cosine" class="w3-button w3-bar-item">Cosine</a>
                         <a href="#arccosine" class="w3-button w3-bar-item">Arccosine</a>
                     </div>
+				</div>
 		</div>
         <div class="w3-light-green title">
 			<button id="openside" class="w3-button w3-light-green w3-xlarge" onclick="sideopen()">&#9776;</button>
