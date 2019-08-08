@@ -74,10 +74,18 @@
     display: block;
 }
 
-.title{
+.titleText{
 	padding-left: 50%;
 }
 
 .trigratios{
+	padding-left: 2.25cm;
+}
+
+.subtitle{
 	padding-left: 1cm;
+}
+
+.secondsubtitle{
+	padding-left: 1.75cm;
 }
