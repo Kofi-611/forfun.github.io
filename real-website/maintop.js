@@ -1,4 +1,4 @@
-function accordion(){
+function accordion_one(){
 	var b = document.getElementById("ratuse");
 	if (b.className.indexOf("w3-show") == -1){
 		b.className += " w3-show";
