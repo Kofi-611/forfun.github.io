@@ -1,5 +1,5 @@
-function accordion(a){
-	var b = document.getElementById(a);
+function accordion(){
+	var b = document.getElementById("ratuse");
 	if (b.className.indexOf("w3-show") == -1){
 		b.className += " w3-show";
 		b.previousElementSibling.className += " w3-purple";
