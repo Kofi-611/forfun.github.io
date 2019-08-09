@@ -1,15 +1,15 @@
 function subtractSymb(a){
-	document.getElementById(a).parentNode.firstChild.nodeValue = "&#8722;";
+	document.getElementById(a).parentNode.firstChild.style.content = "\2212";
 }
 
 function divideSymb(b){
-	document.getElementById(b).parentNode.firstChild.nodeValue = "&#247;";
+	document.getElementById(b).parentNode.firstChild.style.content = "\00F7";
 }
 
 function multiplySymb(c){
-	document.getElementById(c).parentNode.firstChild.nodeValue = "&#215;";
+	document.getElementById(c).parentNode.firstChild.style.content = "\00D7";
 }
 
 function addSymb(d){
-	document.getElementById(d).parentNode.firstChild.nodeValue = "&#43;";
+	document.getElementById(d).parentNode.firstChild.style.content = "\002B";
 }
